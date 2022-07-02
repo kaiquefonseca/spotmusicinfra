@@ -7,7 +7,7 @@ resource "google_artifact_registry_repository" "repo-hackathon" {
   format = "DOCKER"
   }
 
-resource "google_cloud_run_service" "default" {
+resource "google_cloud_run_service" "spotfront" {
   name     = "cloudrun-spotfront"
   location = "us-central1"
 
@@ -25,7 +25,7 @@ resource "google_cloud_run_service" "default" {
   }
 }
 
-resource "google_cloud_run_service" "default" {
+resource "google_cloud_run_service" "spotback" {
   name     = "cloudrun-spotback"
   location = "us-central1"
 
