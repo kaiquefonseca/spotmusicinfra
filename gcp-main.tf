@@ -5,3 +5,4 @@ resource "google_artifact_registry_repository" "repo-hackathon" {
   repository_id = "labhackathon"
   description = "Imagens Docker"
   format = "DOCKER"
+  }
