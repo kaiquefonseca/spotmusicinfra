@@ -42,9 +42,9 @@ resource "google_cloud_run_service" "spotback" {
     latest_revision = true
   }
 }
-resource "google_sql_database" "spotmusicdb" {
-  name     = "spotmusicdb"
-  instance = google_sql_database_instance.spotmusicdb
+resource "google_sql_database" "spotdb" {
+  name     = "spotdb"
+  instance = spotdb
 }
 
 # See versions at https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/sql_database_instance#database_version
